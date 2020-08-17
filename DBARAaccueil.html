@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>dbara</title>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="dbarastyle.css">
+</head>
+<header>
+<a class="navbar-brand" style="display: flex; justify-content: center" href="#"><img class="img-fluid"style="max-width: 100%; height:auto;"src="newone.png"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mt-2 mt-lg-0 ">
+     
+         <li class="nav-item">
+        <a class="nav-link font-italic " href="DBARAcompte.html">  تسجيل حساب  </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-italic " href="DBARArecettes.html">وصفات   </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-italic " href="DBARAaccueil.html"><h3> مكونات   </h3></a>
+      </li>
+   
+   
+      
+    </ul>
+  </div>
+</nav>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="B - Copie.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="D - Copie.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="E - Copie.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+
+</header>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h5 class="text-right"> للحصول على وصفات مطابقة لما هو موجود لديك ، إختر المكونات وإضغط على  البحث عن وصفات       </h5>
+  </div>
+</div>
+<div class="row">
+  <div class="col col-md-3 col-sm-6 col-xs-12">
+    <div class="card text-right">
+      <div class="card-body">
+        <h2 class="card-title mr-0"> لحوم / أسماك / دواجن  </h2>
+        <div class="card-text font-weight-bold display-5"> 
+          
+
+         بيض  <input type="checkbox" class="checks" id="eggs">
+       <hr>
+       سمك <input type="checkbox" class="checks" id="poisson">
+       <hr>
+       تن <input type="checkbox" class="checks" id="thon">
+       <hr>
+       كروفات  <input type="checkbox" class="checks" id="crevettes">
+       <hr>
+       لحم البقر <input type="checkbox" class="checks" id="bagri">
+       <hr>
+       لحم الخروف  <input type="checkbox" class="checks" id="allouch">
+       <hr>
+      
+        دجاج  <input type="checkbox" class="checks" id="poulet">
+          <hr>
+         لحم ديك رومي مفروم <input type="checkbox" class="checks" id="dinde-haché">
+         <hr>
+         لحم بقري مفروم  <input type="checkbox" class="checks" id="bagri-haché">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col col-md-3 col-sm-6 col-12">
+    <div class="card">
+      <div class="card text-right">
+      <div class="card-body">
+        <h2 class="card-title mr-0">  خضر   </h2>
+        <div class="card-text font-weight-bold display-5"> 
+        طماطم <input type="checkbox" class="checks" id="tomate">
+        <hr>
+         ثوم <input type="checkbox" class="checks" id="thoum">
+       <hr>
+       بطاطا <input type="checkbox" class="checks" id="pommedeterre">
+       <hr>
+      فلفل أخضر  <input type="checkbox" class="checks"id="poivronvert">
+       <hr>
+       بصل <input type="checkbox" class="checks" id="oignon">
+       <hr>
+       سبناخ <input type="checkbox" class="checks" id="epinard">
+       <hr>
+       معدنوس <input type="checkbox" class="checks" id="maadnous">
+       <hr>
+        جزر  <input type="checkbox" class="checks" id="carottes">
+        <hr>
+         قرع <input type="checkbox" class="checks" id="kraae">
+         <hr>
+          جلبانة <input type="checkbox" class="checks" id="jelbena">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+ 
+
+<div class="col col-md-3 col-sm-6 col-12">
+    <div class="card">
+      <div class="card text-right">
+      <div class="card-body">
+ <h2 class="card-title mr-0">
+توابل / بقول 
+ </h2>
+        <div class="card-text font-weight-bold display-5"> 
+        ملح <input type="checkbox" class="checks" id="sel">
+       <hr>
+       فلفل أكحل  <input type="checkbox" class="checks" id="poivronnoir">
+       <hr>
+       كركم  <input type="checkbox" class="checks" id="curcum">
+       <hr>
+       فلفل أحمر  <input type="checkbox" class="checks" id="felfelahmar">
+       <hr>
+       تابل   /كروية <input type="checkbox" class="checks" id="tabel w karouiya">
+       <hr>
+
+        فول <input type="checkbox" class="checks" id="foul">
+          <hr>
+         حمص<input type="checkbox" class="checks" id="homs">
+        <hr>
+        لوبيا <input type="checkbox" class="checks" id="loubiya">
+        <hr>
+         ملوخية  <input type="checkbox" class="checks" id="mloukhiya">
+        <hr>
+          نعناع مرحي <input type="checkbox" class="checks" id="na3ne3">
+         <hr>
+         كمون  <input type="checkbox" class="checks" id="kammoun">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+ 
+
+  <div class="col col-md-3 col-sm-6 col-12">
+    <div class="card">
+      <div class="card text-right">
+      <div class="card-body">
+        <h2 class="card-title mr-0"> منتجات أخرى  </h2>
+        <div class="card-text font-weight-bold display-5"> 
+        طماطم مركز  <input type="checkbox" class="checks" id="tomateconcentré">
+        <hr>
+        كسكسي  <input type="checkbox" class="checks" id="couscous">
+       <hr>
+       مقرونة  <input type="checkbox" class="checks" id="makarouna">
+       <hr>
+       شوربة فريك  <input type="checkbox" class="checks" id="chorbafrik">
+       <hr>
+       شوربة لسان عصفور <input type="checkbox" class="checks" id="chorbaoiseau">
+       <hr>
+       برغل <input type="checkbox" class="checks" id="borghol">
+       <hr>
+        محمص  <input type="checkbox" class="checks" id="mhamas">
+          <hr>
+         نواصر <input type="checkbox" class="checks" id="nwaser">
+        <hr>
+         فرينة  <input type="checkbox" class="checks" id="farine">
+         <hr>
+         بريك <input type="checkbox" class="checks" id="brik">
+         <hr>
+         حليب <input type="checkbox" class="checks" id="hlib">
+         <hr>
+         زبدة <input type="checkbox" class="checks" id="zebda">
+        <hr>
+          أرز  <input type="checkbox" class="checks" id="rouz">
+         <hr>
+         سميد  <input type="checkbox" class="checks" id="smid">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<hr class="my-4">
+<div class="d-flex justify-content-center">
+<h4><button class="card-link font-weight-bolder shadow p-3 mb-5 bg-light rounded"  role="button" aria-pressed="true" onclick="searchShow()"> ابحث عن وصفات  </button></h4>
+</div>
+
+<div id="EJJA" style="display: none;">
+  
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="ejja.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right">عجة </h3>
+        <p class="card-text text-right text-muted">المكونات:
+
+أربع بيضات/ أربع ملاعق زيت زيتون/ خمسة  ثوم/ بصلة /أربع حبات طماطم /القليل من النعناع الجاف / ملح/ فلفل أسود/ تابل /كروية/ فلفل أحمر</p>
+        <p class="card-text text-right"> طريقة التحضير : نقلي البصل و الثوم في الزيت الى أن يصبح لونها ذهبي، ثم نضيف حبات الطماطم، التوابل ونصف لتر من الماء و ندعها على النار عند غليان نضيف البيض و النعناع ونحرك  قليلابعد 3 دقائق نسحب الطبخة من النار  </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+
+</div>
+
+
+
+<div id="S.CR" style="display: none;">
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="saucecreu.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right">  صوص كروفات   </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          
+          كروفات/طماطم / ثوم مهروس/ ملعقة زيت/ ملح/ فلفل أسود/كمون/ تابل وكروية
+</p>
+        <p class="card-text text-right">طريقة التحضير :  انقوم بغسل الجمبري وتقشيره. نخلط الجمبري بالملح والفلفل ونصف الثوم والكمون. في وعاء متوسط للطهي ضعي الزيت وباقي الثوم وحركي حتى يصفر الثوم ويصبح ذهبيًا، نضيف عصير الطماطم للثوم واتركيه يغلي قليلًا ثم نضيف الجمبري ، التابل والكروية  ليغلي قليلًا لمدة 5 دقائق.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr class="my-4 border-warning">
+
+
+</div>
+<div id="lablebi" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="lablebi2.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> لبلابي </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          حمص حسب الرغبة /  ملعقة كبيرة من الكمون/  كوب من الخبز البايت المقطع قطع صغيرة / ملعقة كبيرة من الهريسة / فلفل أسود / ملح / حبة من البيض المسلوق/ علبة من سمك التونة/ ملعقتان كبيرتان من زيت الزيتون/نصف كوب من الزيتون الأخضر/ كبار/ جزر وبروكلي مملح
+        </p>
+        <p class="card-text text-right">طريقة التحضير : قبل طبخ اللبلابي بليلة ينقع الحمص في الماء لمدة ليلة في لترين من الماء. ثم يتم غسله و وضعه  في لترين من الماء و نتركه على النار حتى ينضج. عندما يصبح الحمص طريا نضيف الكمون، الهريسة، الملح و نتركه على النار لمدة 15 دقيقة . نسكب اللبلابي في وعاء  و نضيف اليه قطع الخبز و التونة مع اضافة الهريسة، قليل من زيت و بيض مسلوق  </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+
+</div>
+
+
+
+
+<div id="nawaser" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="nwaser.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> نواصر بالدجاج  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          دجاج/ نواصر/ بطاطا/ حمص منقوع/ فلفل أخضر/  بصل/ بيضتان/زيت /  طماطم مركز/، فلفل أحمر/ فلفل أسود/ملح
+</p>
+        <p class="card-text text-right">طريقة التحضير :  نقوم تقطيع الدجاج  إلى قطع متوسطة وتتبليها بالفلفل الأسود والملح و الفلفل الأحمر.
+
+نذع نصف كمية الزيت و نقلي فيها قطع الدجاج حوالي خمس دقائق مع البصل ثم نضيف إليها الحمص و الطماطم المركز  وفلفل أحمر والبطاطا والفلفل واغمري كل ذلك بالماء.
+
+نقوم بدهن  النواصر جيدا بالزيت ثم وضعها  في الكسكاس  وحالما تغلي مرقة الدجاج نطهي على بخارها النواصر مدة نصف ساعة  وعندما تنضج ننزل  الكسكاس بينما يبقى القدر على نار هادئة حتى تنضج قطع الدجاج. في هذه الأثناء نسلق  بيضتان في الماء  ونقلي الفلفل الأخضر .نسكب المرقة فوق النواصر وندخل  الطبق في الفرن مع التحريك حتى تشرب مرقها وتتماسك.
+نسكب  النواصر في إناء التقديم ووزعي فوق سطحها بقطع الدجاج والفلفل الأخضر المقلي وقطع البطاطا والحمص</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+
+</div>
+<div id="kaafteji" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="kafteji.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> كفتاجي  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+
+فلفل / طماطم /  بطاطا / قرع / بيض / هريسة
+        <p class="card-text text-right">طريقة التحضير : نتنظف الخضر ثم  نقم بتقطيعها و قليها مع اضافة رشة الملح. بعد ذلك يقلى البيض نضيف  قليلا من زيت الزيتون و الهريسة. يتم فرم الكل في الوعاء  </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<hr class="my-4 border-warning">
+</div>
+<div id="jjelbena" style="display: none;">
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="jelbena.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right">  جلبانة بالبقري  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+            لحم بقري / جلبانة / طماطم / فلفل/  بصل/  طماطم مركز /  فلفل أحمر/  زيت / كركم / ملح / فلفل أسود / تابل وكروية
+        <p class="card-text text-right">طريقة التحضير :  
+        يقطع اللحم.والبصل و يسخن الزيت مع البصل. يضاف اللحم و يقلى لمدة 10 دقائق مع التحريك.  يضاف الملح والفلفل الأسود و الكركم و تابل وكروية. يضاف معجون الطماطم والفلفل الأحمر تترك الطبخة على نار خفيفة. يضاف كوب من الماء. تضاف الطماطم الطازجة، المقشرة و المفرومة، تطهى مع إضافة لتر من الماء و إضافة الجلبانة. على درجة حرارة متوسطة حتى ينضج اللحم. يضاف الفلفل في النهاية
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4 border-warning">
+</div>
+<div id="pitza" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="pizza.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> بيتزا البيض </h3>
+        <p class="card-text text-right text-muted">المكوّنات  ثلاثة أكواب من الدقيق/  زيت الزيتون/ ملعقة صغيرة من السكر/ ملعقتان صغيرتان من الخميرة الفورية/  ملح/ كوب من الماء/ أربع بيضات/  جبن/  طماطم / ثوم / معجون طماطم / تونة حسب الرغبة / معدنوس حسب الرغبة 
+        </p>
+        <p class="card-text text-right">طريقة التحضير :  ضع الماء الدافئ في وعاء وأضف إليه الخميرة وقلبها حتى تذوب ثم قم بتغطيته ووضعه في مكان دافئ لمدة خمسة عشر دق  قم بإضافة القليل من زيت الزيتون والملح  و الدقيق إلى خليط الخميرة ثم قم بالتقليب الجيد لمدة خمسة دقائق حتى تتشكل العجينة     ثم قم بوضع كمية من الدقيق على المكان الذي سوف تقوم بإعداد البيتزا عليه وقم بعجنه لمدة 8 دقائق لتشكل عجينة لزجة  قم بتشكيل العجينة على شكل كرة ثم قم بوضعها في وعاء به زيت الزيتون ثم غطي العجينة بمشفة  ولتتركها لمدة ساعة.   وفي مقلاة قم بتسخين كمية من زيت الزيتون مع الفلفل و الطماطم و الثوم وقم بالقلي لمدة بسيطة ثم قم بإضافة معجون الطماطم وملعقة أو اثنين من الماء وقم بالتقليب ثم قم برفعه من على النار  قم بأخذ العجينة وفردها ثم غطها بالخليط السابق مع الجبن الموزاريلا و البيض بعد كسر القشرة . ثم قم بوضعها داخل الفرن عند الرف الأوسط  من الفرن لمدة 12 دقيقة </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4 border-warning">
+</div>
+<div id="mosli" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="mosli hout.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> مصلي حوت   </h3>
+        <p class="card-text text-right text-muted">المكونات:
+         سمك / ثوم/ كأس من الماء/ كمون/ كركم/هريسة/ زيت الزيتون/ملح / فلفل أخضر / فلفل أحمر / طماطم / بصل 
+</p>
+        <p class="card-text text-right">طريقة التحضير :  في وعاء نخلط المكونات أعلاه ثم نغمس فيها السمك في الطبق الذي سيدخل إلى الفرن، نضع دوائر البطاطا ونعمل منها فراش للسمك، نضع فوق هذا الفراش السمك ثم نزينه بدوائر البصل و دوائر الطماطم، ودوائر الفلفل
+نضيف الصلصة المتبقية ندخل الطبق إلى الفرن.نتركه حتى تنضج االخضار</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4 border-warning">
+</div>
+
+<div id="frikass" style="display:none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="fricassé.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> فريكاسي  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+فارينة/ بيض/ملح/ سكر/ 50غ زبدة مذوبة/  خميرة فورية / حليب دافئ / هريسة /بطاطا/ مسموطة /زيتون حسب الرغبة  / تن 
+</p>
+        <p class="card-text text-right">طريقة التحضير : تخلط المكونات الجافة  ونخلط  بالحليب ونتركها  ساعة وثم نقسم العجينة لكويرات صغيرة  نتركهم  ربع ساعة وثم يتم قليهم  في الزيت الساخن . نقوم بشق الفريكاسي وتزين بالهريسة و بطاطا مسلوقة وبيض مسلوق وزيتون و تن .</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4 border-warning">
+</div>
+<div id="tchichhout" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="tchich hout.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> تشيش حوت  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          شوربة فريك / حمص منقوع /سمك/ حبة طماطم/ بصلة مفرومة/ملعقة طعام طمام مركزة/ فلفل أحمر / كركم/ فص ثوم/ ملح /فلفل أسود 
+</p>
+        <p class="card-text text-right">طريقة التحضير :  في قدر نسكب الزيت ثم نضيف البصل، مع جميع التوابل ، حبة الطمطام مقطعة والحمص، نضيف للخليط كوب صغير من الماء ونتركه على نار هادئة مدة دقيقتين مع التحريك
+ في الأثناء نضع السمك يطهى في إناء مع الماء وقليل من الملح مدة 5 دقائق ثم نخرجه من الماء، ننزع الشوك جيداً مع الإنتباه جيداً ونتركه على جنب
+ نضيف الماء الذي طهى فيه السمك بعد تصفيته إلى القدر نضيف للقدر شوربة الشعير بعد غسلها وتصفيتها ونتركها مدة 10 دقائق تقلى في القدر 
+ عندما ينضج الحمص والشعير نعدل تركيز الشوربة بالماء الساخن حسب الذوق، نضيف السمك للقدر ونتركه يطهى 5 دقائق إضافية مع لتحريك  نسكب الشوربة في أواني التقديم مع إضافة قطرات من الليمون والنعناع المجفف  </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr class="my-4 border-warning">
+</div>
+<div id="makcrou" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="pastacrev.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> مقرونة بالكروفات  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+           كروفات/  مقرونة/ بصل / زيت/  طماطم مركز/  ملح / فلفل أسود/ فلفل أحمر 
+</p>
+        <p class="card-text text-right">طريقة التحضير :  ضعي في قدر الكروفات مع كمية من الماء مدة نصف ساعة على النار ثم انزعي قشرته . في قدر آخر اسكبي الزيت وقطعي البصل وأضيفي الطماطم والتوابل وبعد التقلية أضيفي نصف لتر من الماء وضعي الكروفات الجاهزة ودعيه يغلي حتى تتحصل على صلصة المقرونة 
+وفي الأثناء ضعي الماء في قدر آخر لسلق المقرونة لمدة 8 دق ثم صفيها واخلطي الصلصة بالمقرونة جيدا  </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+</div>
+<div id="kesksihout" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="kosksihout.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> كسكسي بالحوت   </h3>
+        <p class="card-text text-right text-muted">المكونات:
+           كسكسي  / حوت/ بصل / فلفل أخضر/  طماطم مركز/ زيت زيتون/ ثوم / كمون/ فلفل أحمر/ كركم/ ملح / فلفل أسود
+</p>
+        <p class="card-text text-right">طريقة التحضير :   نقوم بتقشير الحوت وننظفه جيدا ثم نضعه في وعاء ونضيف إليه التوابل ( ثوم مهروس ،ملح ،فلفل أسود ،كمون ، وكركم) .
+نسكب الزيت في القدر ونضيف البصل المقطع ،معجون الطماطم  ،الفلفل الأحمر المرحي ، وكأس ماء ونقلب المكونات ثم نتركه يغلي قليلا. نضيف الفلفل الأخضر ونتركه قليلا حتى يرتخي ثم نخرجه ونتركه جانبا
+ نضيف الماء للصلصة ونتركها على نار هادئة  نبلل حبات الكسكسي بقليل من الماء والزيت والملح ونضعها في الكسكاس
+نضيف الحوت المتبل للصلصة ونتركه على نار هادئة مدة 10 دقائق ثم نخرجه كي لا يتحلل في صلصة الكسكسكي
+ بعد أن يطهى الكسكسي  نضعه في وعاء ونضيف الصلصة شيئاً فشيئاً مع المزج ونتركه يرتاح مدة 5 دقائق ثم نضعه في صحن التقديم ..</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr class="my-4 border-warning">
+</div>
+<div id="bezin" style="display: none;">
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="bezin.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> بازين بالقلاية  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          سميد / نشاء/ لحم خروف /زيت / ملح / فلفل أسود
+</p>
+        <p class="card-text text-right">طريقة التحضير :  البازين: فيقبل ليلة نضع في أناء كأسين سميد رطب و كأس نشاء و لتر ماء وكل ساعتين نسكب الماء و نبدل ماء جديد 
+صباح العيد نسكب الماء بأكمله ثم نضع الخليط في إناء الطهي و نضيف له القليل من الملح و نبدأ في التحريك إلى حين الحصول على عجينة متماسكة و ناضجة عندها نضيف لها 3 ملاعق زيت و نقوم بخلط العجين جيدا قبل أن نضعها من فوق النار
+
+القلاية : نطبخ اللحم في الماء ثم نسكب الماء و نقطع اللحم الى قطع متساوية و نضعه في إناء طهي مع كأسين شاي زيت زيتونة و كأس شاي ماء و الفلفل الاسود و الملح ثم نتركه على النار حتىيتبخر الماء و يبقى فقط الزيت مع التحريك طبعا..
+عند التقديم نفرش الصحن بالبازين نضع عليه القليل من زيت القلاية و يزين الطبق بقطع اللحم "القلاية" </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div id="chorbahout" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="chorbahout.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> شوربة حوت  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+ربع كوب زيت /4  ثوم / 3 سمكات متوسطة الحجم/3 ملاعق كبيرة  معجون طماطم/ فلفل أحمر / كركم / ملح / كمون / شوربة لسان عصفور
+</p>
+        <p class="card-text text-right">طريقة التحضير :   ينظف السمك من قشوره و تنزع احشائه و يغسل جيداً ثم تضاف له ملح وكمون وكركم  التي يخلط بها و يترك منقوعاً فيها لفترة.
+يوضع الزيت في اناء الطبخ على النارو  يضاف له الثوم المهروس ،معجون الطماطم ، الفلفل الأحمر ، الكركم ، الملح و يخلطوا
+ثم يضاف لهم نصف كوب من الماء و يتركوا لمدة خمس دقائق على النار  بعدها يضاف لهم كمية  من الماء و يتركوا يغلوا على النار ثم يضاف السمك بتتبيلته إلى المرقة و يترك يغلي بها حوالي 10 دقائق
+ثم يصفى السمك و يرفع من المرقة و يترك جانباً ليبرد بعد ان يبرد السمك يفتت و يتخلص من اشواكه و يترك جانباً عندما تقل كمية المرق يضاف لها شربة لسان العصفور و تترك تغلي حوالي7دقائق ثم يضاف لها السمك المفتت 
+و توزع الشوربة في صحون التقديم و يرش عليها رشة كمون و تقدم  </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4 border-warning">
+</div>
+
+<div id="kamounia" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="kamm.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> كمونية  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+           لحم بقري / كبدة بقري إختياري / زيت/ بصل/ الثوم/  طماطم مركز/ كركم/  فلفل أسود/ ملح/ تابل وكروية/  كمون
+</p>
+        <p class="card-text text-right">طريقة التحضير :  يتم تقطيع اللحم والكبدة قطع صغيرة  و كذلك البصل الى قطع صغيرة. ثم يوضع في القدر  مع إضافة الزيت و ملعقة الطماطم، الثوم المفروم،  يقلى على النار عندما يحمر البصل يقع إضافة الكركم والفلفل الأسود و ملح و تابل وكروية بعد التقلية يقع إضافة الماء ويترك على النار لمدة 45 دقيقة بعد أن ينضج يضاف له الكمون والمعدنوس و يترك لمدة دقيقتين </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+</div>
+
+
+
+<div id="banadhej" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="banadhej.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> بناضج بالتن  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          300 غ دقيق/150 غ سميد/ملعقة خميرة فورية/ كوب زيت/ كوب ماء دافئ/ ملح/معدنوس مقطع/200 غ تن/100 غ جبن /3 بيضات مسلوقة و مقصوصة مكعبات صغيرة
+</p>
+        <p class="card-text text-right">طريقة التحضير :  امزجي الخميرة بالماء الدافئ و دعها تتفاعل ل 20 دقيقة اخلطي كل مكونات العجين الجافة ( الفرينة ، السميد ، الملح ) أضيفي بعد ذلك الزيت و الخميرة و قومي بدعكها و لكن ليس كثيرا، فقط حتى تتجانس.
+
+دعيها تتخمر ل 30 دقيقة. للحشو اخلطي كل المقادير المتبقية ( تن ، بيض، معدنوس ، جبن ) رشي العجين بالدقيق و قومي بفردها سميكة قليلا ثم قطعيها لدوائر متساوية قومي بحشوها و اغلاقها من الأطراف
+
+ضعيها في الفرن لمدة 30 دقيقة تحت حرارة متوسطة او يمكن قليها. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+</div>
+
+
+<div id="rizcre" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="rizcre.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> روز بالكروفات   </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          بصل/جلبانة/ كروفات/ كركم / تابل/ملح /فلفل أسود
+</p>
+        <p class="card-text text-right">طريقة التحضير :  نقطع البصلة قطع صغيرة ونضعها على النار في الزيت .  ونضع جلبانة  كركم، تابل، فلفل أكحل،ملح .نصب قدر كأسينمن  الماء ونضعها على نار هادئة لمدة 20 دقيقة . ننظف الكروفات و نغسلها. ثم نضعها في الصوص. نسلق الروز و بعد يخلط بالصوص
+
+دعيها تتخمر ل 30 دقيقة. للحشو اخلطي كل المقادير المتبقية ( تن ، بيض، معدنوس ، جبن ) رشي العجين بالدقيق و قومي بفردها سميكة قليلا ثم قطعيها لدوائر متساوية قومي بحشوها و اغلاقها من الأطراف
+
+ضعيها في الفرن لمدة 30 دقيقة تحت حرارة متوسطة او يمكن قليها. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4 border-warning">
+</div>
+
+<div id="mlokhia" style="display: none;">
+
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="mlou.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> الملوخية </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          زيت /  لحم بقري/  كوب من الملوخية المُجَفَّفة/ نصف لتر من الماء المغلي/  فلفل أخضر /ثوم/ ملح/ فلفل أسود/ فلفل أحمر / كركم
+</p>
+        <p class="card-text text-right">طريقة التحضير : في قدر كبير نضع فيه الزيت، ثمّ نضعه على نارٍ متوسطة، ونضع الملوخية المجففة، ونُقَلِّبُهَا بالزَّيت لمدة أربع دقائق. أثناء ذلك نأتي بقدر آخر نضع فيه لحم البقر المُقَطَّع، ونخلطه الثوم والفلفل الأحمر في أربع ملاعق كبيرة من زيت الزيتون.  في قدر الملوخية والزيت، نضع الماء المغلي،ونتركها تغلي لمدة ثلاثين دقيقة. نضيف لحم البقر المُتَبَّلِ إلى الملوخية، ثمّ نتركه يغلي على نارٍ هادئة لمدة ساعتين ونصف. نقلب الخليط من حينٍ لآخر، ونحرص على إيصال الملعقة لقاع الإناء. نضع القليل من الملح. حينما نجد القليل من الزيت يطفو على وجه الإناء، نعلم أنَّ الطبخةَ جاهزة.
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4 border-warning">
+</div>
+
+
+
+<div id="borgholall" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="borghol.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> برغل بالعلوش  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+           لحم علوش/بصل/حمص/جلبانة/ملح/ فلفل أسود/كركم/ برغل/ زيت / الطماطم المركز
+</p>
+        <p class="card-text text-right">طريقة التحضير :  ايقطع البصل و يتبل اللحم (ملح / فلفل أسود / كركم) ثم يغسل البرغل .تحل الطماطم المركزة في قليل من الماء و توضع جميع المكونات في طنجرة الضغط (البصل / الزيت / البرغل / اللحم / الحمص / الجلبانة / الماء) تغلق طنجرة الضغط وتترك على النار​ لمدة 40 دقيقة   ​
+ترتاح الطبخة لمدة ساعة ثم تجمر في الفرن لبضع دقائق </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+
+</div>
+
+<div id="chorbamfdj" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="chorbamf.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> شوربة مفورة بالدجاج  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+         دجاج / فلفل أحمر / فلفل أسود/ ملح /  شربة لسان عصفور/ زيت/ بصل/ طماطم/ جلبانة /حمص منقوع/ بطاطا/ فلفل أخضر
+</p>
+        <p class="card-text text-right">طريقة التحضير :   نقلي الدجاج في الزيت و البصل ثم نضيف   طماطم و فلفل أحمر و فلفل أكحل و ملح نسكب  الماء و الخضر
+
+ندهن  الشربة  بقليل من الزيت ونضعها  فوق  الكسكاس وكل 20 دقيقة نسقي  مالصلصة  وهذا لمدة ساعة. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<hr class="my-4 border-warning">
+</div>
+
+<div id="lazania" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="lazzan.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> لازانيا </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          جبن / لحم مفروم/ زبدة/ طماطم /.طماطم مركز /ملح /فلفل أسود / حليب /فرينة/بصل /زيت 
+</p>
+        <p class="card-text text-right">طريقة التحضير :  
+        نسخن الزيت  ثم نُضيف البصل، ونُحركه إلى أن يذبل. نُضيف اللحم، ونتركه لمدة عشر دقائق مع التحريك بين الحين والآخر. نُضيف الطماطم فوق اللحم، ثم نُذيب الطماطم المركز في قليل من الماء، ومن ثم نُضيفه إلى المزيج. ندع الصلصة على نار منخفضة مع التحريك بين الحين والآخر إلى أن ينضج اللحم. نُحضِر البشاميل، فنذيب الزبدة في قدر على نار متوسطة الحرارة، ثم نُضيف البصل، ونُحركه إلى أن يذبل. نُضيف الدقيق، ونُحرك إلى أن يُصبح لدينا مزيج قريب إلى العجينة. نُخفض النار، ثم نُضيف الحليب بالتدريج مع التحريك المتواصل إلى أن يتماسك المزيج. نُنكه الصلصة بكل من الملح والفلفل الأسود، وبعد ذلك نُزيل القدر عن النار. نضع طبقة من اللازانيا في صينية، ثمّ نُغطّيها بثلث كمية اللحم، وبربع كمية البشاميل. نُعيد الخطوة إلى أن تنتهي الكمية، ثم نرش الجبن على وجهها، ونُدخلها إلى فرن مُسخن مُسبقاً على حرارة متوسطة. نترك الصينية في الفرن لمدّة عشرين دقيقة، ثمّ نُخرجها، ونُقدّمها.
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div id="in" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="3inspan.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> عين سبنيورية  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+ لحم مفروم/بصل مفروم/ معدنوس / ثوم / بيض/ كركم/ تابل وكروية/ زيت/ماء/ملح / فلفل أسود
+</p>
+        <p class="card-text text-right">طريقة التحضير :     نضع اللحم المفروم في وعاء ونضيف البصل المفروم ،البقدونس المفروم ،الثوم المرحي ،الكركم ،التابل والكروية ،ملح وفلفل أسود ونمزج المكونات جيدا نضيف بيضة للخليط ونمزج المكونات ندهن ورقة الألمنيوم بالقليل من الزيت ونفرش الخليط فوقه نطرح الخليط باستعمال الملعقة ونصفف البيض المسلوق المقطع فوق نقوم بلف الخليط جيدا باستعمال ورقة الألمنيوم ثم نغلقها من الجانبين  نسكب القليل من الماء في طبق الفرن ونضيف الخليط الملفوف ثم ندخلها الفرن مدة 45 دقيقة تحت درجة حرارة 180 نخرج الطبق من الفرن ونتركه حتى يبرد  ننزع ورقة الألمنيوم ونقطع عين السبنيورية شرائح متساوية ثم نضعها في طبق التقديم</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+
+</div>
+
+<div id="loubi" style="display: none;">
+  <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="kaaber.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right">  لوبيا بالكعابر  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+          لحم مفروم/فلفل أكحل/ زيت /ملح/ طماطم مركز / ثوم/  بصل /  لوبيا منقوعة/ هريسة / معدنوس
+</p>
+        <p class="card-text text-right">طريقة التحضير :  
+صفّي اللوبيا وحطها في ماء وخليها تطيب نص طياب. قلّي البصل و الثوم .نضيف الطماطم و الماء ونتركها  مدة 30 دقيقة نتبل اللحم المفروم بالثوم و  الهريسة والمعدنوس  نشكل كرات ونقليها .
+ نصفّي اللوبيا ونضيفها للمرق و- بعد 20 دقيقة نضع كرات اللحم المفروم .
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-warning">
+</div>
+
+<div id="felfelm" style="display: none;">
+
+<hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="fefel mehchi.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> فلفل محشي  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+        المكوّنات  فلفل/ بصل/ ثوم/ لحم مفروم/ معدنوس مقطع / إكليل وزعتر/ زيت زيتون
+</p>
+        <p class="card-text text-right">طريقة التحضير :  
+        ن نُسخن القليل الزيت في مقلاة على النار، ثمّ نُضيف البصل إليه، ونُحركه إلى أن يتغير لونه إلى الأصفر ثمّ نُضيف الثوم ثمّ نضيف اللحم والزعتر والمعدنوس  و الفلفل الأسود والملح. نحشي الفلفل الحلو بالخليط، ثمّ نُغطي كلّ حبة من الفلفل برؤوسها المنزوعة ثمّ نضع محشي الفلفل في صينية، ثمّ ننثر فوقها قليلاً من زيت الزيتون ثمّ نُدخل الصينية إلى فرن مُسخن مُسبقاً على نار متوسطة الحرارة وندعها لمدة ثلاثين دقيقة.
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr class="my-4 border-warning">
+
+  </div>
+
+
+  <div id="tajin" style="display: none;">
+
+    <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="tajinbey.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> طاجين الباي  </h3>
+        <p class="card-text text-right text-muted">المكونات:
+لحم مفروم بصل /سبانخ /معدنوس /بيض/ كركم/ ريكوتا/ جبن/ زيت زيتون/ ملح/ فلفل أسود
+</p>
+        <p class="card-text text-right">طريقة التحضير :    تحضير الخضر: نقوم بطهي السبانخ على بخار مائي ونتركها جانبا نقوم بتنظيف البقدونس وغسله ثمّ تقطيعه ونتركه جانبا تحضير اللحم المفروم: نسكب الزيت في وعاء معدّ للطهي ونضيف البصل المفروم واللحم المفروم ثمّ نضعهم فوق النار نسكب في الوعاء القليل من الماء ثمّ نقلّب المكونات ونتركها تنضج مدّة 5 دقائق نرفع الوعاء من فوق النار ونقسمّ كمية اللحم المفروم إلى 3 كتل متساوية .تحضير الطبقة الأولى من الطاجين: نخفق في وعاء 3 بيضات ونضيف الكتلة الأولى من اللحم المفروم، نصف ملعقة قهوة من الكركم، القليل من الملح والفلفل الأسود ثمّ نمزج المكونات جيدا نضيف السبانخ للخليط مع مواصلة مزج المكوّنات إلى أن تتجانس نسكب الخليط في طبق فرن مدهون بقليل من الزيت مسبقا ثمّ نوزّعها بشكل متساوي على كامل الطبق نترك الطبق في الفرن مدّة 10 دقائق وتحت درجة حرارة 180 . تحضير الطبقة الثانية للطاجين: نخفق 3 بيضات في وعاء آخر ونضيف الكتلة الثانية من اللحم المفروم، ملعقتي طعام ريقوتا،  القليل من الملح والفلفل الأسود ثمّ نمزج المكونات جيدا  نخرج الطبق من الفرن ونسكب الخليط فوق الطبقة الأولى من طاجين الباي ثمّ نرجع الطبق مرّة أخرى إلى الفرن مدّة 10 دقائق وتحت نفس درجة الحرارة أي 180 درجة. تحضير الطبقة الثالثة من طاجين الباي: نخفق في وعاء ثالث بقية البيض (3 بيضات) ثمّ نضيف اللحم المفروم المتبقّي، البقدونس المفروم، كمية الجبن المتبقيّة، القليل من الكركم، الملح والفلفل الأسود ثمّ نمزج المكوّنات نخرج الطبق من الفرن ونسكب فوقه الخليط ثمّ نرجع لنفس المدة أي 10 دقائق دون تغيير درجة الحرارة  نخرج الطبق من الفرن ونتركه حتّى يبرد ثمّ نقوم بتقسيم طاجين الباي وتقديمه </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<hr class="my-4 border-warning">
+
+
+
+  </div>
+
+   <div id="houri" style="display: none;">
+
+    <hr class="my-4 border-warning">
+  <div class="card border-light mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 offset-md-2">
+      <a href="page html des recettes/ejja.html"><img src="houriya.png" class="card-img rounded"></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title text-right"> سلطة أمك حورية   </h3>
+        <p class="card-text text-right text-muted">المكونات:
+ بريك/معدنوس/ بصل/ قوته/بيض مسلوق مقطع/ تن/ كبار/جبن/ بيض /فلفل أسود/ ملح/ زيت
+</p>
+        <p class="card-text text-right">طريقة التحضير :     
+يفرم المعدنوس والبصل ويقلبان قليلا فوق النار مع ملعقة صغيرة من الزبدة. يمزج خليط البقدونس والبصل مع القوتة و البيض المسلوق والجبن والكبار والتن ويتبل بالفلفل الأسود والملح. يمزج حشو “الصوابع” بالبيض النيء.تقسم ورقات الملسوقة إلى جزئين متساويين و ويوضع داخلها الحشو ثم تُلف في شكل اصطواني على شكل الأصابع.  تُقلى “صوابع فاطمة” أو “صوابع البريك” في الزيت الساخن حتى النضج.
+ 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+   </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="mainDBARA.js"></script>
+</body>
+</html>
